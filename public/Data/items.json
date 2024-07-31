@@ -1,0 +1,146 @@
+[
+    {
+      "id": "One",
+      "class": "burger",
+      "title": "Burgers",
+      "cards": [
+        {
+          "image": "img/burger01.jpg",
+          "title": "American Classic",
+          "description": "Beef, Cheese, Potato, Onion, Fries",
+          "price": "9.00"
+        },
+        {
+          "image": "img/burger02.jpg",
+          "title": "Chicken Burger",
+          "description": "Chicken, Cheese, Potato, Onion, Fries",
+          "price": "9.00"
+        },
+        {
+          "image": "img/burger03.jpg",
+          "title": "Angus Burger",
+          "description": "Angus Beef, Pickles, Potato, Onion, Fries",
+          "price": "9.00"
+        },
+        {
+          "image": "img/burger04.jpg",
+          "title": "Russian Special",
+          "description": "Beef, Cheese, Potato, Onion, Fries",
+          "price": "9.00"
+        },
+        {
+          "image": "img/burger05.jpg",
+          "title": "Traditional Beef",
+          "description": "Chicken, Cheese, Potato, Onion, Fries",
+          "price": "9.00"
+        },
+        {
+          "image": "img/burger06.jpg",
+          "title": "Burger of a Month",
+          "description": "Angus Beef, Pickles, Potato, Onion, Fries",
+          "price": "9.00"
+        }
+      ]
+    },
+    {
+      "id": "Two",
+      "class": "pizza",
+      "title": "Pizza",
+      "cards": [
+        {
+          "image": "img/pizza01.jpg",
+          "title": "Margherita",
+          "description": "Cheese, Champignon Mushrooms, Tomato, Spinach",
+          "price": "13.00"
+        },
+        {
+          "image": "img/pizza02.jpg",
+          "title": "Prosciutto",
+          "description": "Cheese, Champignon Mushroom, Prosciutto, Cucumber",
+          "price": "13.00"
+        },
+        {
+          "image": "img/pizza03.jpg",
+          "title": "Salami",
+          "description": "Cheese, Champignon Mushroom, Broccoli, Chicken, Potato",
+          "price": "9.00"
+        }
+      ]
+    },
+    {
+      "id": "Three",
+      "class": "sushi",
+      "title": "Sushi",
+      "cards": [
+        {
+          "image": "img/sushi01.jpg",
+          "title": "Nigiri",
+          "description": "A topping, usually fish, served on top of sushi rice",
+          "price": "13.00"
+        },
+        {
+          "image": "img/sushi02.jpg",
+          "title": "Sashimi",
+          "description": "Fish or shellfish, served alone (no rice)",
+          "price": "13.00"
+        },
+        {
+          "image": "img/sushi03.jpg",
+          "title": "Maki",
+          "description": "Rice and filling wrapped in seaweed",
+          "price": "13.00"
+        }
+      ]
+    },
+    {
+      "id": "Four",
+      "class": "dessert",
+      "title": "Desserts",
+      "cards": [
+        {
+          "image": "img/dessert01.jpg",
+          "title": "Chocolate Cake",
+          "description": "Rich chocolate cake with layers of chocolate ganache",
+          "price": "6.00"
+        },
+        {
+          "image": "img/dessert02.jpg",
+          "title": "Cheesecake",
+          "description": "Creamy cheesecake with a graham cracker crust",
+          "price": "5.00"
+        },
+        {
+          "image": "img/dessert03.jpg",
+          "title": "Ice Cream Sundae",
+          "description": "Vanilla ice cream with chocolate sauce and cherries",
+          "price": "4.00"
+        }
+      ]
+    },
+    {
+      "id": "Five",
+      "class": "drinks",
+      "title": "Drinks",
+      "cards": [
+        {
+          "image": "img/drink01.jpg",
+          "title": "Coca Cola",
+          "description": "Classic Coca Cola",
+          "price": "1.50"
+        },
+        {
+          "image": "img/drink02.jpg",
+          "title": "Lemonade",
+          "description": "Freshly squeezed lemonade",
+          "price": "2.00"
+        },
+        {
+          "image": "img/drink03.jpg",
+          "title": "Coffee",
+          "description": "Hot brewed coffee",
+          "price": "1.50"
+        }
+      ]
+    }
+  ]
+  

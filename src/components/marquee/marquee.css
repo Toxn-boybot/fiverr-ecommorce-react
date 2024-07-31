@@ -1,0 +1,17 @@
+.page-title {
+    height: 206px;
+    background-color: #f3f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title h1 {
+    font-size: 4.75rem;
+    font-weight: 400;
+  }
+  @media (max-width: 600px) {
+    .page-title h1 {
+      font-size: 2.75rem;
+    }
+  }

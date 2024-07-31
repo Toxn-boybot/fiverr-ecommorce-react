@@ -1,0 +1,217 @@
+.header {
+    position: fixed;
+    background-color: white;
+    z-index: 900;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  @media (min-width: 1051px) {
+    .navbar {
+      display: none;
+    }
+  }
+  @media (max-width: 300px) {
+    .cart {
+      width: 32px;
+    }
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 90px;
+    transition: 0.2s;
+  }
+  .logoParent {
+    width: 110.36px;
+  }
+  .logo {
+    position: relative;
+    top: 30px;
+    background-color: wheat;
+    z-index: 2;
+    padding: 5%;
+    border-radius: 60px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: max-content;
+  }
+  .logo img {
+    height: 50px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  @media (max-width: 1050px) {
+    .header {
+      display: none;
+    }
+    .cart {
+      width: 56px;
+      display: flex;
+      justify-content: center;
+    }
+    .logo {
+      padding: 1%;
+    }
+   
+  }
+  @media(max-width:350px){
+    .cart {
+      width: 30px;
+    }
+  }
+  .header .container .nav {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  .header .container .nav li {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: oswald, sans-serif;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  .header .container .nav li::after,
+  .navbar-nav .nav-link::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f063";
+    font-weight: 900;
+    display: inline;
+    margin-left: 5px;
+    opacity: 0.5;
+    font-size: 13px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  .header .container .nav li:hover::after {
+    opacity: 1;
+  }
+  .header .container .nav li:hover {
+    margin-bottom: 5px;
+    /*font-weight: 700;
+    */
+    cursor: pointer;
+    color: #ff4500;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  .header .container .nav li:hover a {
+    color: #ff4500;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  .cart {
+    cursor: pointer;
+  }
+  .cart i {
+    font-size: 20px;
+    margin-right: 10px;
+    position: relative;
+    background: #80808038;
+      padding: 4px;
+      border-radius: 50%;
+  }
+  .cart i::before {
+    opacity: 0.7;
+  }
+  .cart i::after {
+    content: "3";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: orangered;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 14px;
+    left: -10px;
+    opacity: 0.9;
+  }
+  .navbar.fixed-top.bg-light{
+    padding: 0px;
+  }
+  .navbar .container .cart {
+    padding: 15px;
+    font-family: oswald, sans-serif;
+  }
+  .nav .order {
+    border: 2px solid black;
+  }
+  .order,
+  .nav-item .order {
+    background-color: white;
+    padding: 15px;
+    position: relative;
+  }
+  .order::before,
+  .nav-item .order::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    color: white;
+  }
+  .order span,
+  .nav-item .order span {
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+  }
+  .order:hover span,
+  .nav-item .order:hover span {
+    color: white;
+  }
+  .order:hover::before,
+  .nav-item .order:hover::before {
+    height: 100%;
+  }
+  .cart span {
+    font-size: 20px;
+  }
+  
+ 
+  @media (max-width: 350px) {
+    .navbar-toggler {
+      padding: 0px;
+    }
+  }
