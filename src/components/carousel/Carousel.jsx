@@ -1,10 +1,10 @@
 import React from 'react';
-import img01 from '../../img/carousel01.jpg'
-import img02 from '../../img/carousel02.jpg'
-import img03 from '../../img/carousel03.jpeg'
-import img04 from '../../img/carousel04.jpg'
-import img05 from '../../img/carousel05.jpg'
-import img06 from '../../img/carousel06.webp'
+const img01 = '../../img/carousel01.jpg'
+const img02 = '../../img/carousel02.jpg'
+const img03 = '../../img/carousel03.jpeg'
+const img04 = '../../img/carousel04.jpg'
+const img05 = '../../img/carousel05.jpg'
+const img06 = '../../img/carousel06.webp'
 const CarouselComponent = () => {
   return (
     <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">

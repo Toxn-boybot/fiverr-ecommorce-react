@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./header.css";
-import logo from "../../img/logo.png";
+const logo = "../../img/logo.png";
 
 const Header = () => {
   useEffect(() => {
@@ -75,6 +75,7 @@ const Header = () => {
             aria-controls="offcanvasExample"
           >
             <i className="fa-solid fa-basket-shopping"></i>
+            
             <span>$35.00</span>
           </div>
           <div

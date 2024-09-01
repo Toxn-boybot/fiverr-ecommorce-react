@@ -1,8 +1,8 @@
 import React from 'react';
 import './offers.css'; // Assuming you have a separate CSS file for styling
-import offer1 from '../../img/offer1.jpg';
-import offer2 from '../../img/offer2.jpg';
-import offer3 from '../../img/offer3.jpg'
+const offer1 = '../../img/offer1.jpg';
+const offer2 = '../../img/offer2.jpg';
+const offer3 = '../../img/offer3.jpg'
 
 
 const offersData = [

@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css'; // Assuming you have a separate CSS file for styling
-import aboutImage from '../../img/about.png';
-import signImage from '../../img/sign.svg';
+ const aboutImage = '../../../public/img/about.png';
+const signImage ='../../img/sign.svg';
 
 const About = () => {
   return (
