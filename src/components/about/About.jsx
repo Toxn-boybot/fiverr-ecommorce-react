@@ -1,7 +1,7 @@
-import React from 'react';
-import './about.css'; // Assuming you have a separate CSS file for styling
- const aboutImage = '../../../public/img/about.png';
-const signImage ='../../img/sign.svg';
+import React from "react";
+import "./about.css"; // Assuming you have a separate CSS file for styling
+const aboutImage = "../../img/about.png";
+const signImage = "../../img/sign.svg";
 
 const About = () => {
   return (
@@ -22,7 +22,11 @@ const About = () => {
             </div>
             <h1 className="about-heading">The best food in London!</h1>
             <p className="about-des text-muted">
-              In 1954 in the USA there was a milkshake machine salesman named Ray Kroc. Ray received an order from the Fiverr brothers' hamburger outlet in California, and was impressed by their company - the menu was simple and cheap but the hamburgers were good; the fries were made in-store; and the shakes were thicker than usual.
+              In 1954 in the USA there was a milkshake machine salesman named
+              Ray Kroc. Ray received an order from the Fiverr brothers'
+              hamburger outlet in California, and was impressed by their company
+              - the menu was simple and cheap but the hamburgers were good; the
+              fries were made in-store; and the shakes were thicker than usual.
             </p>
             <p className="author-name">Mark Johnson, Chef</p>
             <img src={signImage} alt="Signature" />
