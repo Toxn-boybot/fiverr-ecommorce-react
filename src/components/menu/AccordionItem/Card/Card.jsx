@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { toast } from "react-toastify";
+import { CartContext } from "../../../../context/cartContext";
 
 const Card = ({ card }) => {
+  const { addItemToCart } = useContext(CartContext);
+
+  // const handleAddToCart = () => {
+  //   addItemToCart(item); // Add the item to the cart
+  // };
+
+  const handleAddToCart = () => {
+    toast.success("Item added to your cart", {
+      style: { backgroundColor: "#35824E", color: "white", fontWeight: "600" },
+    });
+   
+    addItemToCart(card);
+  };
+
   return (
     <div className="col">
       <div className="card h-100">
@@ -11,7 +27,7 @@ const Card = ({ card }) => {
           <div className="text-md mt-3 mb-4">
             <span className="text-muted">from</span> ${card.price}
           </div>
-          <button className="btn order">
+          <button className="btn order" onClick={handleAddToCart}>
             <span>Add To Cart</span>
           </button>
         </div>
