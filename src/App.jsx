@@ -12,11 +12,11 @@ import Contact from "./components/Contact/Contact";
 import Menu from "./components/menu/Menu";
 
 function App() {
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
 
-  const addToCart = (item) => {
-    setCart((prevCart) => [...prevCart, item]);
-  };
+  // const addToCart = (item) => {
+  //   setCart((prevCart) => [...prevCart, item]);
+  // };
 
   const toastOptions = {
     position: "top-right",

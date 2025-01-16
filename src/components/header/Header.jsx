@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./header.css";
+import Cart from "../cart/Cart";
 const logo = "../../img/logo.png";
 
 const Header = () => {
@@ -39,7 +40,7 @@ const Header = () => {
 
   return (
     <>
-      {" "}
+      
       <div className="header">
         <div className="container" id="ContHeader">
           <div className="logoParent">
@@ -78,7 +79,7 @@ const Header = () => {
             
             <span>$35.00</span>
           </div>
-          <div
+          {/* <div
             className="offcanvas offcanvas-end"
             tabIndex="-1"
             id="offcanvasExample"
@@ -178,7 +179,8 @@ const Header = () => {
                 <span>Go to checkout</span>
               </a>
             </div>
-          </div>
+          </div> */}
+          <Cart/>
         </div>
       </div>
       {/* Mobile Header */}

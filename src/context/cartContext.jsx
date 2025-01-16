@@ -15,6 +15,7 @@ export const CartProvider = ({ children }) => {
     }
   }, []);
 
+ 
   // Function to add an item to the cart
   const addItemToCart = (item) => {
     setCart((prevCart) => {
@@ -31,6 +32,10 @@ export const CartProvider = ({ children }) => {
   };
 
   console.log(cart); // Logs the current state of the cart
+
+
+
+
 
   return (
     <CartContext.Provider value={{ cart, addItemToCart, clearCart }}>
