@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext } from '../../context/cartContext'; // Adjust the import path if necessary
 
 const Cart = () => {
-  const { cart, removeItemFromCart } = useContext(CartContext);
+  const { cart, removeItemFromCart, clearCart } = useContext(CartContext);
 
   return (
     <div
@@ -10,6 +10,7 @@ const Cart = () => {
       tabIndex="-1"
       id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel"
+      data-bs-backdrop="true"
     >
       <div className="offcanvas-header cartMenu">
         <h5 className="offcanvas-title cartMenu" id="offcanvasExampleLabel">

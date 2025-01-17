@@ -20,12 +20,12 @@ function App() {
 
   const toastOptions = {
     position: "top-right",
-    autoClose: 5000,
+    autoClose: 2000,
     hideProgressBar: true,
     newestOnTop: false,
     closeOnClick: true,
     rtl: false,
-    pauseOnFocusLoss: true,
+    pauseOnFocusLoss: false,
     draggable: true,
     pauseOnHover: true,
   };

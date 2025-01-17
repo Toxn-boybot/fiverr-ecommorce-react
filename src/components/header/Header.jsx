@@ -10,7 +10,7 @@ const Header = () => {
       const contHeaderElement = document.getElementById("ContHeader");
       const logoTwo = document.getElementById("logo2");
 
-      if ((logoOne && contHeaderElement) || logoTwo ) {
+      if ((logoOne && contHeaderElement) || logoTwo) {
         if (
           document.body.scrollTop > 0 ||
           document.documentElement.scrollTop > 50
@@ -18,7 +18,7 @@ const Header = () => {
           contHeaderElement.style.height = "70px";
           logoOne.style.height = "50px";
           logoTwo.style.top = "0px";
-          logoTwo.style.backgroundColor =  "#f8f9fa";
+          logoTwo.style.backgroundColor = "#f8f9fa";
           logoTwo.style.boxShadow = "none";
         } else {
           contHeaderElement.style.height = "90px";
@@ -40,7 +40,6 @@ const Header = () => {
 
   return (
     <>
-      
       <div className="header">
         <div className="container" id="ContHeader">
           <div className="logoParent">
@@ -76,7 +75,7 @@ const Header = () => {
             aria-controls="offcanvasExample"
           >
             <i className="fa-solid fa-basket-shopping"></i>
-            
+
             <span>$35.00</span>
           </div>
           {/* <div
@@ -180,7 +179,7 @@ const Header = () => {
               </a>
             </div>
           </div> */}
-          <Cart/>
+          <Cart />
         </div>
       </div>
       {/* Mobile Header */}
@@ -208,6 +207,7 @@ const Header = () => {
           >
             <i className="fa-solid fa-basket-shopping"></i>
           </div>
+         
           <div
             className="offcanvas offcanvas-end"
             tabIndex="-1"
@@ -309,6 +309,7 @@ const Header = () => {
               </a>
             </div>
           </div>
+          {/* MOBILE MENU  */}
           <div
             className="offcanvas offcanvas-start"
             tabIndex="-1"

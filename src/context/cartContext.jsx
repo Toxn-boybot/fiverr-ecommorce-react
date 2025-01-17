@@ -25,6 +25,13 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  // Function to remove an item from the cart
+  const removeItemFromCart = (index) => {
+    const updatedCart = cart.filter((_, i) => i !== index); // Remove the item at the given index
+    setCart(updatedCart); // Update the state
+    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Save the updated cart to localStorage
+  };
+
   // Function to clear the cart
   const clearCart = () => {
     setCart([]); // Empty the cart
@@ -38,7 +45,7 @@ export const CartProvider = ({ children }) => {
 
 
   return (
-    <CartContext.Provider value={{ cart, addItemToCart, clearCart }}>
+    <CartContext.Provider value={{ cart, addItemToCart, clearCart, removeItemFromCart }}>
       {children}
     </CartContext.Provider>
   );
