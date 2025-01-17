@@ -1,8 +1,13 @@
-import React, { useContext } from 'react';
-import { CartContext } from '../../context/cartContext'; // Adjust the import path if necessary
+import React, { useContext } from "react";
+import "./cart.css";
+import { CartContext } from "../../context/cartContext"; // Adjust the import path if necessary
 
 const Cart = () => {
   const { cart, removeItemFromCart, clearCart } = useContext(CartContext);
+
+
+  const delivery = cart.length > 0 ? 9 : 0; 
+
 
   return (
     <div
@@ -38,7 +43,10 @@ const Cart = () => {
                     <a
                       href="#"
                       className="action-icon"
-                      onClick={() => removeItemFromCart(index)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        removeItemFromCart(index);
+                      }}
                     >
                       <i className="ti ti-close"></i>
                     </a>
@@ -60,24 +68,34 @@ const Cart = () => {
             <div className="col-5">
               <strong>
                 $
-                {cart.reduce((total, item) => total + parseFloat(item.price), 0).toFixed(2)}
+                {cart
+                  .reduce((total, item) => total + parseFloat(item.price), 0)
+                  .toFixed(2)}
               </strong>
             </div>
           </div>
           <div className="row">
             <div className="text-right text-muted col-7">Delivery:</div>
             <div className="col-5">
-              <strong>$9.00</strong>
+              <strong>{delivery.toFixed(2)}</strong>
             </div>
           </div>
           <hr className="hr-sm" />
           <div className="row text-lg">
-            <div className="text-right text-muted col-7">Total:</div>
+            <div className="text-right text-muted col-7">
+              <div class="icon-container" onClick={clearCart}>
+                <i class="fa-solid fa-trash-can"></i>
+              </div>
+              Total:
+            </div>
             <div className="col-5">
               <strong>
                 $
                 {(
-                  cart.reduce((total, item) => total + parseFloat(item.price), 0) + 9
+                  cart.reduce(
+                    (total, item) => total + parseFloat(item.price),
+                    0
+                  ) + delivery
                 ).toFixed(2)}
               </strong>
             </div>

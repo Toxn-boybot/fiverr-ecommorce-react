@@ -15,6 +15,7 @@ export const CartProvider = ({ children }) => {
     }
   }, []);
 
+  
  
   // Function to add an item to the cart
   const addItemToCart = (item) => {
@@ -30,6 +31,7 @@ export const CartProvider = ({ children }) => {
     const updatedCart = cart.filter((_, i) => i !== index); // Remove the item at the given index
     setCart(updatedCart); // Update the state
     localStorage.setItem("cart", JSON.stringify(updatedCart)); // Save the updated cart to localStorage
+   
   };
 
   // Function to clear the cart

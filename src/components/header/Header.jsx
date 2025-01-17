@@ -1,9 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "./header.css";
 import Cart from "../cart/Cart";
+import { CartContext } from "../../context/cartContext";
 const logo = "../../img/logo.png";
 
 const Header = () => {
+  const { cart } = useContext(CartContext);
+
   useEffect(() => {
     const scrollFunction = () => {
       const logoOne = document.getElementById("logo");
@@ -75,8 +78,16 @@ const Header = () => {
             aria-controls="offcanvasExample"
           >
             <i className="fa-solid fa-basket-shopping"></i>
-
-            <span>$35.00</span>
+            <span className="cartNumber">{cart.length}</span>
+            <span>
+              $
+              {(
+                cart.reduce(
+                  (total, item) => total + parseFloat(item.price),
+                  0
+                ) + 9
+              ).toFixed(2)}
+            </span>
           </div>
           {/* <div
             className="offcanvas offcanvas-end"
@@ -207,7 +218,7 @@ const Header = () => {
           >
             <i className="fa-solid fa-basket-shopping"></i>
           </div>
-         
+
           <div
             className="offcanvas offcanvas-end"
             tabIndex="-1"

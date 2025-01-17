@@ -1,0 +1,45 @@
+.cartNumber{
+
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: orangered;
+    font-size: 10px !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 14px;
+    left: -10px;
+    opacity: 0.9;
+    font-family: "Font Awesome 6 Free";
+}
+
+.icon-container {
+    display: flex;                /* Use flexbox to center the icon */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    width: 30px;                  /* Set width of the circle */
+    height: 30px;                 /* Set height of the circle */
+    background-color: #f44336;    /* Add a background color */
+    border-radius: 50%;           /* Make it a perfect circle */
+    color: white;                 /* Set icon color */
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 5px;              /* Optional: Add a pointer cursor */
+  }
+  
+  .icon-container i {
+    font-size: 20px;              /* Adjust the icon size */
+  }
+  
+
+  .cart-table-summary .text-right{
+    display: flex;
+    justify-content: end;
+  }
