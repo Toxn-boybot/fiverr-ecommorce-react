@@ -81,12 +81,12 @@ const Header = () => {
             <span className="cartNumber">{cart.length}</span>
             <span>
               $
-              {(
+              {cart.length > 0 ? (
                 cart.reduce(
                   (total, item) => total + parseFloat(item.price),
                   0
                 ) + 9
-              ).toFixed(2)}
+              ).toFixed(2) : (0).toFixed(2)}
             </span>
           </div>
           {/* <div
